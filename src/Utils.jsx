@@ -6,7 +6,19 @@ import {
   OtoparkPng,
   TemizlikPng,
   WifiPng,
-} from "./src/assets/img/services";
+} from "./assets/img/services";
+
+import {
+  Room1,
+  Room2,
+  Room3,
+  Room4,
+  Room5,
+  Room6,
+  Room7,
+  Room8,
+  Room9,
+} from "./assets/img";
 
 export const Services = [
   {
@@ -37,4 +49,16 @@ export const Services = [
     image: HizmetPng,
     desc: "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero mollitia velit?",
   },
+];
+
+export const HotelImages = [
+  Room1,
+  Room2,
+  Room3,
+  Room4,
+  Room5,
+  Room6,
+  Room7,
+  Room8,
+  Room9,
 ];
