@@ -19,7 +19,7 @@ function Gallery() {
   };
 
   return (
-    <section className="flex flex-col gap-4">
+    <section className="flex flex-col gap-8">
       <Title title="Foto Galeri" subTitle="OTELİMİZ" />
       <FsLightbox
         toggler={lightboxController.toggler}
@@ -33,7 +33,7 @@ function Gallery() {
           {HotelImages.map((item, index) => (
             <Image
               onClick={() => handleClickImage(index + 1)}
-              className="w-full max-h-[400px]"
+              className="w-full max-h-[400px] cursor-pointer"
               key={index}
               alt="Dört Yol Otel Galeri"
               src={item}
