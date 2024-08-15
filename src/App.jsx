@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import ComingSoon from "./components/ComingSoon";
 import Contact from "./components/Contact";
@@ -7,14 +8,23 @@ import Main from "./components/Main";
 import ServicesSection from "./components/ServicesSection";
 
 function App() {
-  const isComingSoon = true;
+  const [comingSoon, setComingSoon] = useState(true);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const devMode = queryParams.get("dev");
+
+    if (devMode === "1") {
+      setComingSoon(false);
+    }
+  }, []);
+
   return (
     <>
-      {isComingSoon ? (
+      {comingSoon ? (
         <ComingSoon />
       ) : (
         <main className="w-full">
-          <ComingSoon />
           <Main />
           <section className="md:container mx-auto w-full py-8 px-4 flex flex-col gap-16">
             <About />
