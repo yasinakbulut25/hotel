@@ -36,7 +36,6 @@ function App() {
             <ServicesSection />
             <Contact />
             <Form />
-            <BottomNavigation />
           </section>
           <Footer />
         </main>
