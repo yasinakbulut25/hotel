@@ -1,6 +1,7 @@
 import { LocationIcon } from "../assets/icons";
 import BackgroundImage from "../assets/img/otel-5.jpg";
 import { Link } from "@nextui-org/react";
+import ArrowGif from '../assets/arrow.gif';
 
 function Main() {
   return (
@@ -25,6 +26,9 @@ function Main() {
           <span className="stroke-text">HOŞGELDİNİZ!</span>
         </h1>
       </div>
+      <a href="#hakkimizda" className="w-full absolute bottom-5 flex justify-center h-8 opacity-60">
+        <img src={ArrowGif} alt="kaydır" />
+      </a>
     </div>
   );
 }
