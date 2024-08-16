@@ -61,6 +61,7 @@ function Header() {
     >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
+          className={isScrolled || isMenuOpen ? "text-black" : "text-white"}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
@@ -68,7 +69,6 @@ function Header() {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           <Image className="w-14 h-14" alt="" src={Logo} />
-          <p className="font-bold text-inherit">ACME</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -89,11 +89,14 @@ function Header() {
         ))}
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu
+        className="fixed top-0 pt-24 bg-slate-100 flex flex-col gap-4 items-center"
+        style={{ "--navbar-height": "0rem" }}
+      >
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className="w-full text-inherit"
+              className="w-max min-w-[250px] bg-slate-50 shadow flex justify-center p-4 rounded-lg text-inherit"
               href={`#${item.url}`}
               size="lg"
             >
