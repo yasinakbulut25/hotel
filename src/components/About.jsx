@@ -3,7 +3,7 @@ import Title from "./Title";
 
 function About() {
   return (
-    <section className="relative flex flex-col gap-8">
+    <section id="hakkimizda" className="relative flex flex-col gap-8">
       <Title title="Hakkımızda" subTitle="HİKAYEMİZ" />
       <p className="max-w-[920px] mx-auto text-pretty text-center">
         2010 yılından bu yana, otelimiz konuklarımıza huzur dolu bir konaklama

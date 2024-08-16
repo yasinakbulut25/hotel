@@ -4,7 +4,7 @@ import Title from "./Title";
 
 function ServicesSection() {
   return (
-    <section className="flex flex-col gap-8">
+    <section id="hizmetlerimiz" className="flex flex-col gap-8">
       <Title title="Neler Sunuyoruz?" subTitle="HİZMETLERİMİZ" />
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 place-items-center">
         {Services.map((item, index) => (

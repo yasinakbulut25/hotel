@@ -1,7 +1,7 @@
 import { Image } from "@nextui-org/react";
 import Title from "./Title";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import { HotelImages } from "../Utils";
+import { allHotelImages } from "../Utils";
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 
@@ -19,18 +19,18 @@ function Gallery() {
   };
 
   return (
-    <section className="flex flex-col gap-8">
+    <section id="galeri" className="flex flex-col gap-8">
       <Title title="Foto Galeri" subTitle="OTELİMİZ" />
       <FsLightbox
         toggler={lightboxController.toggler}
-        sources={HotelImages}
+        sources={allHotelImages}
         slide={lightboxController.slide}
       />
       <ResponsiveMasonry
         columnsCountBreakPoints={{ 350: 2, 768: 3, 1024: 4, 1280: 5 }}
       >
         <Masonry gutter="16px">
-          {HotelImages.map((item, index) => (
+          {allHotelImages.map((item, index) => (
             <Image
               onClick={() => handleClickImage(index + 1)}
               className="w-full max-h-[400px] cursor-pointer"

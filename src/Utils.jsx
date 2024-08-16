@@ -1,64 +1,60 @@
-import {
-  TvPng,
-  HizmetPng,
-  KahvaltitPng,
-  KlimaPng,
-  OtoparkPng,
-  TemizlikPng,
-  WifiPng,
-} from "./assets/img/services";
-
-import {
-  Room1,
-  Room2,
-  Room3,
-  Room4,
-  Room5,
-  Room6,
-  Room7,
-  Room8,
-  Room9,
-} from "./assets/img";
+import * as ServicesImages from "./assets/img/services";
+import * as HotelImages from "./assets/img";
 
 export const Services = [
   {
-    image: TemizlikPng,
+    image: ServicesImages.TemizlikPng,
     desc: "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero mollitia velit?",
   },
   {
-    image: KahvaltitPng,
+    image: ServicesImages.KahvaltitPng,
     desc: "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero mollitia velit?",
   },
   {
-    image: OtoparkPng,
+    image: ServicesImages.OtoparkPng,
     desc: "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero mollitia velit?",
   },
   {
-    image: WifiPng,
+    image: ServicesImages.WifiPng,
     desc: "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero mollitia velit?",
   },
   {
-    image: KlimaPng,
+    image: ServicesImages.KlimaPng,
     desc: "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero mollitia velit?",
   },
   {
-    image: TvPng,
+    image: ServicesImages.TvPng,
     desc: "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero mollitia velit?",
   },
   {
-    image: HizmetPng,
+    image: ServicesImages.HizmetPng,
     desc: "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero mollitia velit?",
   },
 ];
 
-export const HotelImages = [
-  Room1,
-  Room2,
-  Room3,
-  Room4,
-  Room5,
-  Room6,
-  Room7,
-  Room8,
-  Room9,
+export const allHotelImages = Object.values(HotelImages).sort(
+  (imageA, imageB) => imageA.localeCompare(imageB)
+);
+
+export const menuItems = [
+  {
+    text: "Hakkımızda",
+    url: "hakkimizda",
+  },
+  {
+    text: "Hizmetlerimiz",
+    url: "hizmetlerimiz",
+  },
+  {
+    text: "Foto Galeri",
+    url: "galeri",
+  },
+  {
+    text: "Adres",
+    url: "adres",
+  },
+  {
+    text: "İletişim",
+    url: "iletisim",
+  },
 ];

@@ -1,59 +1,41 @@
 import React from "react";
+import { Image, Link } from "@nextui-org/react";
+import Logo from "../assets/img/logo.jpg";
+import { menuItems } from "../Utils";
 
 function Footer() {
   return (
-    <footer class="bg-white dark:bg-gray-900">
-      <div class="w-full max-w-screen-2xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://flowbite.com/"
-            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8"
-              alt="Flowbite Logo"
-            />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
-          </a>
-          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">
-                Licensing
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
+    <footer className="w-full max-w-screen-2xl mx-auto p-4 md:py-8">
+      <div className="flex flex-col items-center gap-8">
+        <Image
+          src={Logo}
+          alt="Dört Yol Otel"
+          className="object-scale w-full h-auto max-w-[500px]"
+        />
+
+        <div className="flex flex-wrap items-center mb-6 sm:mb-0">
+          {menuItems.map((item, index) => (
+            <Link
+              className="hover:underline me-4 md:me-6 text-inherit font-medium text-sm text-gray-500"
+              href={`#${item.url}`}
+            >
+              {item.text}
+            </Link>
+          ))}
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2024{" "}
-          <a
-            href="https://www.linkedin.com/in/yasinakbulut/"
-            target="_blank"
-            class="underline"
-          >
-            Yasin Akbulut
-          </a>{" "}
-          Tarafından Geliştirildi.
-        </span>
       </div>
+      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span className="flex gap-1 justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        © 2024
+        <Link
+          className="underline font-medium text-sm text-gray-500"
+          target="_blank"
+          href="https://www.linkedin.com/in/yasinakbulut/"
+        >
+          Yasin Akbulut
+        </Link>
+        Tarafından Geliştirildi.
+      </span>
     </footer>
   );
 }
