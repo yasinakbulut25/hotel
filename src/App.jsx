@@ -8,7 +8,6 @@ import Main from "./components/Main";
 import ServicesSection from "./components/ServicesSection";
 import Form from "./components/Form";
 import Header from "./components/Header";
-import BottomNavigation from "./components/BottomNavigation";
 
 function App() {
   const [comingSoon, setComingSoon] = useState(true);

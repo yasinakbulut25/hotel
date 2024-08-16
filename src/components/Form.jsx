@@ -20,7 +20,7 @@ function Form() {
         style={{
           minWidth: "100%",
           maxWidth: "100%",
-          minHeight: '900px',
+          minHeight: "900px",
           height: "auto",
           border: "none",
         }}
