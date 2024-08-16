@@ -10,7 +10,7 @@ import Form from "./components/Form";
 import Header from "./components/Header";
 
 function App() {
-  const [comingSoon, setComingSoon] = useState(false);
+  const [comingSoon, setComingSoon] = useState(true);
 
   useEffect(() => {
     const queryParams = new URLSearchParams(window.location.search);
