@@ -13,7 +13,7 @@ function Footer() {
           className="object-scale w-full h-auto max-w-[500px]"
         />
 
-        <div className="flex flex-wrap items-center mb-6 sm:mb-0">
+        <div className="flex flex-wrap justify-center items-center mb-6 sm:mb-0">
           {menuItems.map((item, index) => (
             <Link
               key={index}
