@@ -33,7 +33,7 @@ function Header() {
 
   return (
     <Navbar
-      className={`fixed duration-300 shadow ${
+      className={`sm:block hidden fixed duration-300 shadow ${
         isScrolled
           ? "bg-slate-100 text-black"
           : "bg-transparent text-white shadow-transparent"
@@ -59,7 +59,7 @@ function Header() {
         ],
       }}
     >
-      <NavbarContent className="sm:hidden" justify="start">
+      {/* <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
           className={isScrolled || isMenuOpen ? "text-black" : "text-white"}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -70,7 +70,7 @@ function Header() {
         <NavbarBrand>
           <Image className="w-14 h-14" alt="" src={Logo} />
         </NavbarBrand>
-      </NavbarContent>
+      </NavbarContent> */}
 
       <NavbarContent
         className="w-full hidden sm:flex gap-4 font-normal tracking-wide"
@@ -89,7 +89,7 @@ function Header() {
         ))}
       </NavbarContent>
 
-      <NavbarMenu
+      {/* <NavbarMenu
         className="fixed top-0 pt-24 bg-slate-100 flex flex-col gap-4 items-center"
         style={{ "--navbar-height": "0rem" }}
       >
@@ -104,7 +104,7 @@ function Header() {
             </Link>
           </NavbarMenuItem>
         ))}
-      </NavbarMenu>
+      </NavbarMenu> */}
     </Navbar>
   );
 }

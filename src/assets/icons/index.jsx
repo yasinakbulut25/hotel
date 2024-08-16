@@ -1,11 +1,7 @@
 import { LocationIcon } from "./LocationIcon";
 import { EmailIcon } from "./EmailIcon";
 import { PhoneIcon } from "./PhoneIcon";
-import { Hotel } from "./Hotel";
+import { HotelIcon } from "./HotelIcon";
+import { MobileIcon } from "./MobileIcon";
 
-export {
-  LocationIcon,
-  EmailIcon,
-  PhoneIcon,
-  Hotel,
-};
+export { LocationIcon, EmailIcon, PhoneIcon, HotelIcon, MobileIcon };

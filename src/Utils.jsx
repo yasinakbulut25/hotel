@@ -39,22 +39,27 @@ export const allHotelImages = Object.values(HotelImages).sort(
 export const menuItems = [
   {
     text: "Hakkımızda",
+    mobileText: "Hakkımızda",
     url: "hakkimizda",
   },
   {
-    text: "Hizmetlerimiz",
-    url: "hizmetlerimiz",
-  },
-  {
     text: "Foto Galeri",
+    mobileText: "Galeri",
     url: "galeri",
   },
   {
+    text: "Hizmetlerimiz",
+    mobileText: "Hizmetler",
+    url: "hizmetlerimiz",
+  },
+  {
     text: "Adres",
+    mobileText: "Adres",
     url: "adres",
   },
   {
     text: "İletişim",
+    mobileText: "İletişim",
     url: "iletisim",
   },
 ];

@@ -1,4 +1,4 @@
-export const Hotel = (props) => {
+export const HotelIcon = (props) => {
   return (
     <svg
       width="32"
@@ -16,4 +16,4 @@ export const Hotel = (props) => {
   );
 };
 
-export default Hotel;
+export default HotelIcon;

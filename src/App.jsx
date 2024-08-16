@@ -8,6 +8,7 @@ import Main from "./components/Main";
 import ServicesSection from "./components/ServicesSection";
 import Form from "./components/Form";
 import Header from "./components/Header";
+import BottomNavigation from "./components/BottomNavigation";
 
 function App() {
   const [comingSoon, setComingSoon] = useState(true);
@@ -31,10 +32,11 @@ function App() {
           <Main />
           <section className="lg:container mx-auto w-full pb-8 px-4 flex flex-col gap-16">
             <About />
-            <ServicesSection />
             <Gallery />
+            <ServicesSection />
             <Contact />
             <Form />
+            <BottomNavigation />
           </section>
           <Footer />
         </main>

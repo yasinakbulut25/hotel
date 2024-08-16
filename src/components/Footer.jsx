@@ -16,6 +16,7 @@ function Footer() {
         <div className="flex flex-wrap items-center mb-6 sm:mb-0">
           {menuItems.map((item, index) => (
             <Link
+              key={index}
               className="hover:underline me-4 md:me-6 text-inherit font-medium text-sm text-gray-500"
               href={`#${item.url}`}
             >
@@ -24,8 +25,8 @@ function Footer() {
           ))}
         </div>
       </div>
-      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span className="flex gap-1 justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      <hr className="my-6 border-gray-200 sm:mx-autolg:my-8" />
+      <span className="flex gap-1 justify-center text-sm text-gray-500 sm:text-center">
         © 2024
         <Link
           className="underline font-medium text-sm text-gray-500"
