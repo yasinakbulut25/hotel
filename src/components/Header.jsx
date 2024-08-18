@@ -23,23 +23,29 @@ function Header() {
 
   useEffect(() => {
     const sections = menuItems.map((item) => document.getElementById(item.url));
+    const isMobile = window.innerWidth <= 768;
+    const threshold = isMobile ? 0.2 : 0.5;
 
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5,
+      threshold: threshold,
     };
 
     const observerCallback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const index = sections.indexOf(entry.target);
+          console.log("index :>> ", index);
           setActiveIndex(index);
         }
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
 
     sections.forEach((section) => {
       if (section) observer.observe(section);

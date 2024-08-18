@@ -6,11 +6,11 @@ function BottomNavigation({ activeIndex, setActiveIndex, isScrolled }) {
   return (
     <div
       style={{ zIndex: 9999999 }}
-      className={`fixed w-full h-20 px-2 pb-3 -translate-x-1/2 left-1/2 duration-300 ${
+      className={`sm:hiddsen block fixed w-full h-20 px-2 pb-3 -translate-x-1/2 left-1/2 duration-300 ${
         isScrolled ? "bottom-0" : "-bottom-20"
       }`}
     >
-      <div className="sm:hidden block h-full bg-white border border-gray-200 rounded-full shadow-lg">
+      <div className="h-full bg-white border border-gray-200 rounded-full shadow-lg">
         <div className="flex justify-evenly h-full">
           {menuItems.map((item, index) => (
             <Link
@@ -21,7 +21,7 @@ function BottomNavigation({ activeIndex, setActiveIndex, isScrolled }) {
               }`}
               href={`#${item.url}`}
             >
-              {item.mobileText}
+              {item.text}
             </Link>
           ))}
         </div>
