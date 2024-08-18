@@ -6,7 +6,7 @@ function BottomNavigation({ activeIndex, setActiveIndex, isScrolled }) {
   return (
     <div
       style={{ zIndex: 9999999 }}
-      className={`sm:hiddsen block fixed w-full h-20 px-2 pb-3 -translate-x-1/2 left-1/2 duration-300 ${
+      className={`sm:hidden block fixed w-full h-20 px-2 pb-3 -translate-x-1/2 left-1/2 duration-300 ${
         isScrolled ? "bottom-0" : "-bottom-20"
       }`}
     >
