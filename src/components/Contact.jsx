@@ -24,8 +24,8 @@ function Contact() {
     {
       icon: <EmailIcon />,
       title: "Mail Adresimiz",
-      desc: "info@yourdomain.com",
-      link: "mailto:info@yourdomain.com",
+      desc: "iletisim@dortyolotel.com",
+      link: "mailto:iletisim@dortyolotel.com",
     },
   ];
   return (

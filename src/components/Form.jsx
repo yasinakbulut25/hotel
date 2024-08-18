@@ -2,7 +2,7 @@ import React from "react";
 import Title from "./Title";
 
 function Form() {
-  const formID = "242266247829061";
+  const formID = "242301686101041";
 
   return (
     <section
@@ -14,9 +14,12 @@ function Form() {
         className="min-h-[670px]"
         id={`JotFormIFrame-${formID}`}
         title="Otel Form"
+        frameborder="0"
+        allowTransparency="true"
         onLoad={window.parent.scrollTo(0, 0)}
         allow="geolocation; microphone; camera; fullscreen"
         src={`https://form.jotform.com/${formID}`}
+        scrolling="no"
         style={{
           minWidth: "100%",
           maxWidth: "100%",
@@ -25,6 +28,7 @@ function Form() {
           border: "none",
         }}
       />
+      <div className="absolute w-full bg-zinc-50 h-20 bottom-0"></div>
     </section>
   );
 }

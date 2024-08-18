@@ -5,7 +5,7 @@ import ArrowGif from '../assets/arrow.gif';
 
 function Main() {
   return (
-    <div className="relative w-full py-20 h-dvh mb-16 z-10">
+    <div className="relative w-full py-20 h-screen mb-16 z-10">
       <img
         className="absolute top-0 left-0 w-full h-full brightness-[.3] object-cover z-0"
         src={BackgroundImage}

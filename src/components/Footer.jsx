@@ -5,7 +5,7 @@ import { menuItems } from "../Utils";
 
 function Footer() {
   return (
-    <footer className="w-full max-w-screen-2xl mx-auto p-4 md:py-8">
+    <footer className="w-full max-w-screen-2xl mx-auto p-4 md:pb-6 pb-24">
       <div className="flex flex-col items-center gap-8">
         <Image
           src={Logo}
@@ -13,7 +13,7 @@ function Footer() {
           className="object-scale w-full h-auto max-w-[500px]"
         />
 
-        <div className="flex flex-wrap justify-center items-center mb-6 sm:mb-0">
+        <div className="flex flex-wrap gap-y-3 justify-center items-center mb-6 sm:mb-0">
           {menuItems.map((item, index) => (
             <Link
               key={index}

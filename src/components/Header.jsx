@@ -24,7 +24,7 @@ function Header() {
   return (
     <>
       <Navbar
-        className={`sm:block hidden fixed duration-300 shadow ${
+        className={`sm:flex hidden justify-center fixed duration-300 shadow ${
           isScrolled
             ? "bg-slate-100 text-black"
             : "bg-transparent text-white shadow-transparent"
