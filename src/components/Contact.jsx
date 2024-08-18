@@ -24,8 +24,8 @@ function Contact() {
     {
       icon: <EmailIcon />,
       title: "Mail Adresimiz",
-      desc: "iletisim@dortyolotel.com",
-      link: "mailto:iletisim@dortyolotel.com",
+      desc: "info@dortyolotel.com",
+      link: "mailto:info@dortyolotel.com",
     },
   ];
   return (
