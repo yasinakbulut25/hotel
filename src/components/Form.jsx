@@ -14,8 +14,7 @@ function Form() {
         className="min-h-[670px]"
         id={`JotFormIFrame-${formID}`}
         title="Otel Form"
-        frameborder="0"
-        allowTransparency="true"
+        frameBorder="0"
         onLoad={window.parent.scrollTo(0, 0)}
         allow="geolocation; microphone; camera; fullscreen"
         src={`https://form.jotform.com/${formID}`}
