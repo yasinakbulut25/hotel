@@ -26,7 +26,7 @@ function Main() {
           <span className="stroke-text">HOŞGELDİNİZ!</span>
         </h1>
       </div>
-      <a href="#hakkimizda" className="w-full absolute bottom-16 flex justify-center h-8 opacity-60">
+      <a href="#hakkimizda" className="w-full absolute bottom-24 flex justify-center h-8 opacity-60">
         <img src={ArrowGif} alt="kaydır" />
       </a>
     </div>
