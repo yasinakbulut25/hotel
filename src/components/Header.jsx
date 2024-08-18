@@ -36,7 +36,6 @@ function Header() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const index = sections.indexOf(entry.target);
-          console.log("index :>> ", index);
           setActiveIndex(index);
         }
       });

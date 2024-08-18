@@ -1,5 +1,4 @@
 import About from "./components/About";
-import ComingSoon from "./components/ComingSoon";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
